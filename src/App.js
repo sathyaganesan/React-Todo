@@ -1,16 +1,16 @@
 import React from 'react';
-import Todo from './Todo';
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
+import './components/Todo.css';
 
 const todoActivities = [
   {
-    task: 'Organize Garage',
+    task: "Organize Garage",
     id: 1528817077286,
     completed: false
   },
   {
-    task: 'Bake Cookies',
+    task: "Bake Cookies",
     id: 1528817084358,
     completed: false
   }
@@ -59,12 +59,11 @@ class App extends React.Component {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <Todo />
         <TodoForm formAttr={this.addNewActivity}/>
         <TodoList
+          toggleAttr = {this.toggleActivity}
           activitiesAttr={this.state.todoActivities}
           completedAttr={this.activityCompleted}
-          toggleAttr = {this.toggleActivity}
         />
         
       </div>

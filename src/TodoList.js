@@ -1,12 +1,16 @@
 import React from 'react';
+import Todo from './Todo';
+import './components/Todo.css';
 
 const TodoList = (props) => {
     return (
-        <div>
+        <div className = "complete-button">
             {props.activitiesAttr.map((item) => (
-                <item key={item.id} item = {item} toggleAttr={props.toggleAttr}/>
+                <Todo key={item.id} item = {item} toggleAttr={props.toggleAttr}/>
             ))}
-            <button onClick = {props.completedAttr}>Activity Completed</button>
+            <button onClick={props.completedAttr} className = "complete-button">
+                Activity Completed
+            </button>
         </div>
     );
 };
