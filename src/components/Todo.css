@@ -39,16 +39,36 @@ button {
     font-family: 'Sansita Swashed', cursive;
     color: yellow;
     font-size: 20px;
+    margin: 20px;
+    /* align-items: center; */
 }
 
-.activities {
+.activities-styling {
     color: yellow;
     font-family: 'Sansita Swashed', cursive;
     display: flex;
     justify-content: center;
+    border: 2px solid rgb(179, 70, 70);
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 7px;
+    width: 300px;
+    cursor: pointer;
 }
 
-complete-button {
+.completedclass {
+    text-decoration: line-through;
+    background-color: rgb(234, 0, 255);
+}
+
+.complete-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.completed {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
