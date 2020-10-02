@@ -26,7 +26,8 @@ class TodoForm extends React.Component {
                 <input type="text"
                     name="todoItem"
                     placeholder="Todo Item"
-                    onChange = {this.changeHandler}
+                    onChange={this.changeHandler}
+                    value = {this.state.newActivity}
                 />
                 <button>Add</button>
             </form>

@@ -4,16 +4,16 @@ import TodoList from './TodoList';
 import './components/Todo.css';
 
 const todoActivities = [
-  {
-    task: "Organize Garage",
-    id: 1528817077286,
-    completed: false
-  },
-  {
-    task: "Bake Cookies",
-    id: 1528817084358,
-    completed: false
-  }
+  // {
+  //   task: "Organize Garage",
+  //   id: 1528817077286,
+  //   completed: false
+  // },
+  // {
+  //   task: "Bake Cookies",
+  //   id: 1528817084358,
+  //   completed: false
+  // }
 ];
 
 

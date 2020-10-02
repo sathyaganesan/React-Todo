@@ -8,9 +8,12 @@ const TodoList = (props) => {
             {props.activitiesAttr.map((item) => (
                 <Todo key={item.id} item = {item} toggleAttr={props.toggleAttr}/>
             ))}
-            <button onClick={props.completedAttr} className = "complete-button">
-                Activity Completed
-            </button>
+            <div className = "completed">
+                <button onClick={props.completedAttr} >
+                    Activity Completed
+                </button>
+            </div>
+            
         </div>
     );
 };
